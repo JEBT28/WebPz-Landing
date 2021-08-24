@@ -1,10 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="./js/app.js"></script>
+    <link href="./css/styles.css" rel="stylesheet">
+    <title>WebPz - Home</title>
 </head>
-<body>
-$END$
+
+<body class="relative font-poppins scrollbar-thin scrollbar-thumb-purple-700 w-screen min-h-screen overflow-x-hidden h-[max-content] bg-fuchsia-100">
+<div id="menu" class="absolute z-30 flex items-center justify-center hidden w-screen h-screen bg-transparent rounded sm:hidden">
+    <span class="z-40 w-full h-full bg-gray-400 opacity-25" onclick="(toggleMenu())">
+
+    </span>
+    <ul class="absolute z-50 flex flex-col w-56 px-4 py-6 space-y-2 text-lg font-semibold text-purple-900 bg-white rounded-lg shadow-md h-72">
+        <li><a class="border-b-2 border-purple-900" href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Templates</a></li>
+        <li><a href="#">Pricing</a></li>
+        <button class="px-2 py-1 text-sm font-medium text-white rounded bg-violet-600 focus:outline-none focus:shadow-md">
+            Get
+            Started
+        </button>
+    </ul>
+</div>
+    <nav class="relative flex items-center justify-between w-full h-12 px-10 py-2 overflow-x-hidden " >
+    <a class="flex w-auto space-x-4 text-xl font-bold text-purple-900" href="">
+        <span class="relative w-5 h-5 rotate-45 border-4 border-purple-900">
+            <span class="absolute border-b-4 border-r-4 w-[200%] h-[200%] border-purple-900 rounded opacity-50 z-10 -bottom-2.5 -right-2.5">
+            </span>
+        </span>
+        <h1>WebPz</h1>
+    </a>
+    <button class="bg-transparent md:hidden focus:outline-none text-violet-900" onclick="(toggleMenu())" >
+        <svg class="w-auto h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+            <path clip-rule="evenodd"
+                  d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                  fill-rule="evenodd"/>
+        </svg>
+    </button>
+    <ul class="hidden w-auto text-sm font-semibold text-purple-900 md:flex md:space-x-6">
+        <li><a class="border-b-2 border-purple-900" href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Templates</a></li>
+        <li><a href="#">Pricing</a></li>
+    </ul>
+    <button class="hidden px-2 py-1 text-sm font-medium text-white rounded md:block bg-violet-600 focus:outline-none focus:shadow-md">
+        Get
+        Started
+    </button>
+</nav>
+<header class="w-full flex flex-col h-[max-content] overflow-x-none -mb-10 mt-16 items-center space-y-8 px-4 text-center">
+    <h1 class="mx-auto text-2xl font-bold text-violet-900 md:text-4xl line-clamp-2">We make it simple to build a
+        website</h1>
+    <p class="text-base font-medium opacity-50 text-violet-900">Create a website in just three clicks. Unique, simple
+        and
+        friendly. It's that easy.</p>
+    <div class="flex bg-white w-full md:w-1/2 h-14 rounded-xl p-[0.0625rem] shadow-2xl">
+        <input class="h-full w-1/2 rounded-l-xl md:w-2/3 px-2 py-0.5 italic focus:outline-none" placeholder="Find your domain"
+               type="text">
+        <button class="w-1/2 h-full font-semibold text-white bg-rose-500 opacity-80 rounded-r-xl md:w-1/3">
+            Search Domain
+        </button>
+    </div>
+    <div class="flex justify-center w-full h-auto mb-16 space-x-4 overflow-x-auto">
+        <figure class="flex-shrink-0 bg-purple-400 rounded-lg h-36 w-36">
+
+        </figure>
+        <figure class="flex-shrink-0 bg-red-400 rounded-lg h-36 w-36">
+
+        </figure>
+        <figure class="flex-shrink-0 bg-green-400 rounded-lg h-36 w-36">
+
+        </figure>
+        <figure class="flex-shrink-0 bg-blue-400 rounded-lg h-36 w-36">
+
+        </figure>
+        <figure class="flex-shrink-0 bg-gray-400 rounded-lg h-36 w-36">
+
+        </figure>
+        <figure class="flex-shrink-0 bg-yellow-400 rounded-lg h-36 w-36">
+
+        </figure>
+        <figure class="flex-shrink-0 bg-indigo-400 rounded-lg h-36 w-36">
+
+        </figure>
+        <figure class="flex-shrink-0 rounded-lg bg-fuchsia-400 h-36 w-36">
+
+        </figure>
+    </div>
+</header>
+<section class="bg-blueGray-100 overflow-x-hidden w-full h-[max-content] px-10 py-20 flex justify-center">
+    <div class="w-full h-[max-content] bg-transparent md:bg-white md:shadow-2xl mt-16 md:rounded-tl-[200rem] md:rounded-tr-[200rem] md:rounded-bl-[50rem] md:rounded-br-[50rem] md:h-[30rem] md:w-[60rem] flex flex-col py-5 items-center">
+        <div class="py-5 space-y-2 text-center md:h-1/2 md:w-1/2">
+            <h1 class="text-2xl font-extrabold text-violet-900 ">Simple Web <br>Building Interface
+            </h1>
+            <p class="text-sm font-medium opacity-50 text-violet-900">Enjoy a whole new site building experience with
+                the best website builder.</p>
+        </div>
+        <div class="h-[max-content] md:h-1/2 w-full flex flex-col space-y-8 md:flex-row md:space-y-0 md:space-x-4 px-5">
+            <div class="flex flex-col items-center space-y-4 text-center">
+                <figure class="relative flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg">
+                    <span class="absolute z-0 w-5 h-5 rounded right-6 bottom-6 bg-gradient-to-br from-pink-500 via-pink-200 to-transparent"></span>
+                    <span class="absolute z-10 w-5 h-5 border-2 border-pink-400 border-dashed rounded right-4 bottom-4"></span>
+                </figure>
+                <h1 class="mx-auto text-lg font-extrabold text-violet-900 line-clamp-2">No Drag and Drop</h1>
+                <p class="text-sm font-medium opacity-50 text-violet-900">Enjoy a whole new site building experience
+                    with the best website builder.</p>
+            </div>
+            <div class="flex flex-col items-center space-y-4 text-center">
+                <figure class="relative flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg">
+                    <span class="absolute z-0 w-5 h-5 rounded right-6 bottom-6 bg-gradient-to-br from-pink-500 via-pink-200 to-transparent"></span>
+                    <span class="absolute z-10 w-5 h-5 border-2 border-pink-400 border-dashed rounded right-4 bottom-4"></span>
+                </figure>
+                <h1 class="mx-auto text-lg font-extrabold text-violet-900 line-clamp-2">Simple Click and Edit</h1>
+                <p class="text-sm font-medium opacity-50 text-violet-900">Enjoy a whole new site building experience
+                    with the best website builder.</p>
+            </div>
+            <div class="flex flex-col items-center space-y-4 text-center">
+                <figure class="relative flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg">
+                    <span class="absolute z-0 w-5 h-5 rounded right-6 bottom-6 bg-gradient-to-br from-pink-500 via-pink-200 to-transparent"></span>
+                    <span class="absolute z-10 w-5 h-5 border-2 border-pink-400 border-dashed rounded right-4 bottom-4"></span>
+                </figure>
+                <h1 class="mx-auto text-lg font-extrabold text-violet-900 line-clamp-2">Simple Color Selection</h1>
+                <p class="text-sm font-medium opacity-50 text-violet-900">Enjoy a whole new site building experience
+                    with the best website builder.</p>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
